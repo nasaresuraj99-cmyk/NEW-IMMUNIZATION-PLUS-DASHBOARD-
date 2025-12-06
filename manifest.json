@@ -1,0 +1,99 @@
+{
+  "name": "Immunization Tracker",
+  "short_name": "ImmuTrack",
+  "description": "IA2030 Compliant Immunization Tracking PWA for children 0-59 months",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2c5282",
+  "theme_color": "#2c5282",
+  "orientation": "portrait-primary",
+  "categories": ["health", "medical", "productivity"],
+  "icons": [
+    {
+      "src": "/assets/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Dashboard View"
+    },
+    {
+      "src": "/assets/screenshot2.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile View"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Add New Child",
+      "short_name": "Add Child",
+      "description": "Register a new child for immunization",
+      "url": "/?add-child",
+      "icons": [{ "src": "/assets/add-icon.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "View Defaulters",
+      "short_name": "Defaulters",
+      "description": "View children with overdue vaccines",
+      "url": "/?defaulters",
+      "icons": [{ "src": "/assets/alert-icon.png", "sizes": "96x96" }]
+    }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+immu",
+      "url": "/?child=%s"
+    }
+  ]
+}
